@@ -262,11 +262,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &63223515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63223512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.326, y: -0.014, z: 0}
+  m_LocalPosition: {x: -3.326, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -417,11 +417,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &199042478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -506,7 +506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199042475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.909, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -4.909, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6928,11 +6928,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!50 &533984669
 Rigidbody2D:
   serializedVersion: 4
@@ -7038,7 +7038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533984667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.682, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -2.682, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7104,11 +7104,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &826812936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7193,7 +7193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826812933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.97, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -3.97, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7339,11 +7339,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &947444479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7428,7 +7428,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947444476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.557, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -5.557, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7494,11 +7494,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &969045005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7583,7 +7583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969045002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.867, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -5.867, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7668,7 +7668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997654246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.106, y: 0.093, z: 0}
+  m_LocalPosition: {x: -2.106, y: 0.19, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 16964859}
@@ -7738,6 +7738,7 @@ MonoBehaviour:
   m_jumpStrengthForce: 9
   m_playerControllerNum: 0
   m_playerManager: {fileID: 909427608}
+  m_hasRemovedThisFrame: 0
 --- !u!61 &997654252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7868,11 +7869,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &1053727857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7957,7 +7958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053727854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.233, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -5.233, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8023,11 +8024,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &1111986892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8112,7 +8113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111986889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5129995, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -6.5129995, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8157,11 +8158,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!50 &1128681021
 Rigidbody2D:
   serializedVersion: 4
@@ -8267,7 +8268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128681019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.147, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -7.147, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8312,11 +8313,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!50 &1204336768
 Rigidbody2D:
   serializedVersion: 4
@@ -8422,7 +8423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204336766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.604, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -4.604, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8488,11 +8489,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &1269770038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8577,7 +8578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269770035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.646, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -3.646, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8622,11 +8623,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!50 &1575646229
 Rigidbody2D:
   serializedVersion: 4
@@ -8732,7 +8733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575646227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.004, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -3.004, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8941,7 +8942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745600778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.64, y: 0.074, z: 0}
+  m_LocalPosition: {x: -7.64, y: 0.21, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1626162401}
@@ -9019,6 +9020,7 @@ MonoBehaviour:
   m_jumpStrengthForce: 9
   m_playerControllerNum: 1
   m_playerManager: {fileID: 909427608}
+  m_hasRemovedThisFrame: 0
 --- !u!1 &1953197710
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,11 +9081,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &1953197713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9168,7 +9170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953197710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.294, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -4.294, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9234,11 +9236,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &2072326573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9323,7 +9325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072326570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.837, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -6.837, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9389,11 +9391,11 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
+    m_MaximumMotorForce: 500
+  m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -180
-    m_UpperAngle: 180
+    m_LowerAngle: -250
+    m_UpperAngle: 250
 --- !u!61 &2113848413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9478,7 +9480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113848410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1889997, y: -0.013999999, z: 0}
+  m_LocalPosition: {x: -6.1889997, y: 0.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}

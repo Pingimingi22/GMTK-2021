@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
         results = Physics2D.CircleCastAll(transform.position, m_groundCheckRadius, Vector2.down);
         for (int i = 0; i < results.Length; i++)
         {
-            if (results[i].collider.gameObject.layer == 0)
+            if (results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8)
             {
                 if (Vector2.Distance(playerFeetPos, results[i].point) < m_groundedCheckDistance)
                 {
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
         results = Physics2D.CircleCastAll(transform.position, m_groundCheckRadius, Vector2.down);
         for (int i = 0; i < results.Length; i++)
         {
-            if (results[i].collider.gameObject.layer == 0)
+            if (results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8)
             {
                 if (Vector2.Distance(playerFeetPos, results[i].point) < m_groundedCheckDistance)
                 { 
