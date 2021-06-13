@@ -26,7 +26,7 @@ public class RopeManager : MonoBehaviour
         m_player1Ropes = new List<GameObject>();
 
         m_ropeSegmentS = m_ropeSegment;
-        m_ropeWidth = (GameObject.Find("rope").GetComponent<SpriteRenderer>().bounds.size.x);
+        m_ropeWidth = (GameObject.Find("testRope").GetComponent<SpriteRenderer>().bounds.size.x);
         m_playerManagerS = m_playerManager;
     }
 
@@ -259,11 +259,20 @@ public class RopeManager : MonoBehaviour
                 Destroy(m_player0Ropes[0]);
                 m_player0Ropes.RemoveAt(0);
 
+                
+
                 if (m_player0Ropes.Count > 0)
-                { 
+                {
+                    // nudge player towards new rope. hopefully this fixes physics issues.
+                    m_playerManagerS.m_playerController0.m_playerRigidbody.AddForce((m_player0Ropes[m_player0Ropes.Count - 1].transform.position - m_playerManagerS.m_playerController0.transform.position).normalized * 10, ForceMode2D.Impulse);
+                    m_playerManagerS.m_playerController1.m_playerRigidbody.AddForce((m_player0Ropes[m_player0Ropes.Count - 1].transform.position - m_playerManagerS.m_playerController1.transform.position).normalized * 10, ForceMode2D.Impulse);
+
                     SetRopeRigidbody(m_playerManagerS.m_playerController0.gameObject, m_player0Ropes[0].GetComponent<Rigidbody2D>(), 0);
 
                     SetConnectedAnchorPoint(m_playerManagerS.m_playerController0.gameObject, playerAnchorPoint, 0);
+
+
+                    
                 }
             }
         }

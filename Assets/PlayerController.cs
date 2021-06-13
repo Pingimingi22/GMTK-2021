@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     private float m_reelInCounter = 0.0f;
 
 
+    public float m_swingForce = 3.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,8 +56,8 @@ public class PlayerController : MonoBehaviour
 
         CheckIfGrounded();
 
-        if (Input.GetKeyDown(KeyCode.R))
-            RopeManager.ReelRope(m_playerControllerNum);
+        //if (Input.GetKeyDown(KeyCode.R))
+        //    RopeManager.ReelRope(m_playerControllerNum);
 
         if (Input.GetMouseButtonUp(0) && m_hasRemovedThisFrame)
         {
@@ -78,10 +80,29 @@ public class PlayerController : MonoBehaviour
             m_playerRigidbody.velocity = new Vector2((Vector3.right * m_playerSpeed * Time.deltaTime).x, m_playerRigidbody.velocity.y);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && m_isGrounded && !m_hasJumped)
+        if (m_isGrounded)
         {
-            m_playerRigidbody.AddForce(Vector2.up * m_jumpStrengthForce, ForceMode2D.Impulse);
-            m_hasJumped = true;
+            
+            if (Input.GetKeyDown(KeyCode.Space) && m_isGrounded && !m_hasJumped)
+            {
+                Debug.Log("Basic Jump");
+                m_playerRigidbody.AddForce(Vector2.up * m_jumpStrengthForce, ForceMode2D.Impulse);
+                m_hasJumped = true;
+            }
+        }
+        else
+        {
+            
+            if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.A))
+            {
+                Debug.Log("Grapple swing jump.");
+                m_playerRigidbody.AddForce(Vector2.left * m_swingForce, ForceMode2D.Impulse);
+            }
+            if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.D))
+            {
+                Debug.Log("Grapple swing jump.");
+                m_playerRigidbody.AddForce(Vector2.right * m_swingForce, ForceMode2D.Impulse);
+            }
         }
 
 
@@ -99,19 +120,19 @@ public class PlayerController : MonoBehaviour
 	{
         
 
-        //if (Input.GetKey(KeyCode.R))
-        //{
-        //    m_reelInCounter += Time.deltaTime;
-        //    if (m_reelInCounter >= m_reelInSpeed)
-        //    {
-        //        RopeManager.ReelRope(m_playerControllerNum);
-        //        m_reelInCounter = 0.0f;
-        //    }
-        //}
-        //if (Input.GetKeyUp(KeyCode.R))
-        //{
-        //    m_reelInCounter = 0.0f;
-        //}
+        if (Input.GetKey(KeyCode.R))
+        {
+            m_reelInCounter += Time.deltaTime;
+            if (m_reelInCounter >= m_reelInSpeed)
+            {
+                RopeManager.ReelRope(m_playerControllerNum);
+                m_reelInCounter = 0.0f;
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            m_reelInCounter = 0.0f;
+        }
     }
 
 	private void CheckIfGrounded()
@@ -121,7 +142,7 @@ public class PlayerController : MonoBehaviour
         results = Physics2D.CircleCastAll(transform.position, m_groundCheckRadius, Vector2.down);
         for (int i = 0; i < results.Length; i++)
         {
-            if (results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8)
+            if (results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8 && results[i].collider.gameObject != gameObject)
             {
                 if (Vector2.Distance(playerFeetPos, results[i].point) < m_groundedCheckDistance)
                 {
@@ -150,7 +171,7 @@ public class PlayerController : MonoBehaviour
         results = Physics2D.CircleCastAll(transform.position, m_groundCheckRadius, Vector2.down);
         for (int i = 0; i < results.Length; i++)
         {
-            if (results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8)
+            if ((results[i].collider.gameObject.layer == 0 || results[i].collider.gameObject.layer == 8) && results[i].collider.gameObject != gameObject)
             {
                 if (Vector2.Distance(playerFeetPos, results[i].point) < m_groundedCheckDistance)
                 { 
