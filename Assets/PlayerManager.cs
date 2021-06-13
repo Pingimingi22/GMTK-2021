@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     {
         m_selector0s = m_selector0;
         m_selector1s = m_selector1;
+
     }
 
     // Update is called once per frame

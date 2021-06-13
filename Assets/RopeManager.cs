@@ -259,9 +259,12 @@ public class RopeManager : MonoBehaviour
                 Destroy(m_player0Ropes[0]);
                 m_player0Ropes.RemoveAt(0);
 
-                SetRopeRigidbody(m_playerManagerS.m_playerController0.gameObject, m_player0Ropes[0].GetComponent<Rigidbody2D>(), 0);
+                if (m_player0Ropes.Count > 0)
+                { 
+                    SetRopeRigidbody(m_playerManagerS.m_playerController0.gameObject, m_player0Ropes[0].GetComponent<Rigidbody2D>(), 0);
 
-                SetConnectedAnchorPoint(m_playerManagerS.m_playerController0.gameObject, playerAnchorPoint, 0);
+                    SetConnectedAnchorPoint(m_playerManagerS.m_playerController0.gameObject, playerAnchorPoint, 0);
+                }
             }
         }
         else if (player == 1)
@@ -271,9 +274,12 @@ public class RopeManager : MonoBehaviour
                 Destroy(m_player1Ropes[0]);
                 m_player1Ropes.RemoveAt(0);
 
-                SetRopeRigidbody(m_playerManagerS.m_playerController1.gameObject, m_player1Ropes[0].GetComponent<Rigidbody2D>(), 1);
+                if (m_player1Ropes.Count > 0)
+                { 
+                    SetRopeRigidbody(m_playerManagerS.m_playerController1.gameObject, m_player1Ropes[0].GetComponent<Rigidbody2D>(), 1);
 
-                SetConnectedAnchorPoint(m_playerManagerS.m_playerController1.gameObject, playerAnchorPoint, 0);
+                    SetConnectedAnchorPoint(m_playerManagerS.m_playerController1.gameObject, playerAnchorPoint, 0);
+                }
             }
         }
     }

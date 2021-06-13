@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
 
     public bool m_hasRemovedThisFrame = false;
 
+    // Reel in timer stuff.
+    public float m_reelInSpeed = 1;
+    private float m_reelInCounter = 0.0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,7 +95,26 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void CheckIfGrounded()
+	public void FixedUpdate()
+	{
+        
+
+        //if (Input.GetKey(KeyCode.R))
+        //{
+        //    m_reelInCounter += Time.deltaTime;
+        //    if (m_reelInCounter >= m_reelInSpeed)
+        //    {
+        //        RopeManager.ReelRope(m_playerControllerNum);
+        //        m_reelInCounter = 0.0f;
+        //    }
+        //}
+        //if (Input.GetKeyUp(KeyCode.R))
+        //{
+        //    m_reelInCounter = 0.0f;
+        //}
+    }
+
+	private void CheckIfGrounded()
     {
         Vector2 playerFeetPos = new Vector2(transform.position.x, transform.position.y + m_groundCheckYOffset);
         RaycastHit2D[] results;
@@ -147,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < hit.Length; i++)
         { 
-            if (hit[i].collider != null && hit[i].transform.root.tag != "Player")
+            if (hit[i].collider != null && (hit[i].transform.root.tag != "Player" && hit[i].collider.gameObject.layer != 9))
             {
                 CursorManager.SetCursor(CustomCursorType.GRAPPLE);
                 m_isSelecting = true;
