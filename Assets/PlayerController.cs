@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     public float m_swingForce = 3.0f;
 
+    public float m_hoverDistance = 0.01f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -200,7 +202,7 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < hit.Length; i++)
         { 
-            if (hit[i].collider != null && (hit[i].transform.root.tag != "Player" && hit[i].collider.gameObject.layer != 9))
+            if (hit[i].collider != null && (hit[i].transform.root.tag != "Player" && hit[i].collider.gameObject.layer != 9 && hit[i].collider.gameObject.layer != 11))
             {
                 CursorManager.SetCursor(CustomCursorType.GRAPPLE);
                 m_isSelecting = true;
@@ -250,4 +252,9 @@ public class PlayerController : MonoBehaviour
             return;
         }
     }
+
+	public void FixStuckIssue()
+	{
+        transform.position += Vector3.up * m_hoverDistance;
+	}
 }

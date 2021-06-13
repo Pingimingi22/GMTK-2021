@@ -22,11 +22,20 @@ public class PlayerManager : MonoBehaviour
         m_selector0s = m_selector0;
         m_selector1s = m_selector1;
 
+        m_playerController0.FixStuckIssue();
+        m_playerController1.FixStuckIssue();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameManager.m_isPaused)
+                GameManager.UnpauseGame();
+        }
+
         if (!GameManager.m_isGameOver && !GameManager.m_isPaused)
         {
             if (m_currentPlayer == 0)
