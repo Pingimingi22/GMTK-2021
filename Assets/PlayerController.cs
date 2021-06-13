@@ -59,6 +59,14 @@ public class PlayerController : MonoBehaviour
         //if (Input.GetKeyDown(KeyCode.R))
         //    RopeManager.ReelRope(m_playerControllerNum);
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameManager.m_isPaused)
+                GameManager.UnpauseGame();
+            else
+                GameManager.PauseGame();
+        }
+
         if (Input.GetMouseButtonUp(0) && m_hasRemovedThisFrame)
         {
             m_hasRemovedThisFrame = false;

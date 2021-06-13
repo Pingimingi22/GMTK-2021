@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.m_isGameOver)
+        if (!GameManager.m_isGameOver && !GameManager.m_isPaused)
         {
             if (m_currentPlayer == 0)
             {
@@ -40,7 +40,7 @@ public class PlayerManager : MonoBehaviour
                 m_playerController1.enabled = true;
             }
         }
-        else // Game is over so lets lock player controls.
+        else // Game is over or paused so lets lock player controls.
         {
             m_playerController0.enabled = false;
             m_playerController1.enabled = false;
