@@ -27,15 +27,24 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (m_currentPlayer == 0)
+        if (!GameManager.m_isGameOver)
         {
-            m_playerController0.enabled = true;
-            m_playerController1.enabled = false;
+            if (m_currentPlayer == 0)
+            {
+                m_playerController0.enabled = true;
+                m_playerController1.enabled = false;
+            }
+            else if (m_currentPlayer == 1)
+            {
+                m_playerController0.enabled = false;
+                m_playerController1.enabled = true;
+            }
         }
-        else if (m_currentPlayer == 1)
+        else // Game is over so lets lock player controls.
         {
             m_playerController0.enabled = false;
-            m_playerController1.enabled = true;
+            m_playerController1.enabled = false;
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
     }
 
