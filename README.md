@@ -4,3 +4,11 @@ GMTK-2021
 
 ## About
 Although it's kind of silly, and maybe the rope physics isn't the greatest out there, I'm pretty proud of this game. It was made for the 2021 GMTK game jam and took about a day and a half to make. If you're interested in downloading a release copy, check out the games Itch.io page at: https://pingimingi.itch.io/the-mountain-brothers
+
+## Screenshots
+![TheMountainBrothersMainScreen](https://imgur.com/nwUMVrG.jpg)
+![Imgur](https://i.imgur.com/qqJ8cFt.png)
+![Imgur](https://i.imgur.com/7KB8LpS.png)
+![Imgur](https://i.imgur.com/X0KEBXD.png)
+
+
